@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Discover the magical world of Wonka!" />
+    <meta name="author" content="Wonka Team" />
+    <title>Wonka - Chocolates</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .img-fluid.rounded-circle {
+            border-radius: 20%;
+            width: 350px;
+            /* 원하는 크기로 조정 가능 */
+            height: 350px;
+            /* 원하는 크기로 조정 가능 */
+            object-fit: cover;
+            border: 7px solid #6f42c1;
+            /* 보라색 테두리 */
+        }
+
+        /* 네비게이션 바의 배경색을 보라색으로 변경 */
+        .navbar-dark {
+            background-color: #6f42c1 !important;
+            /* 보라색 */
+        }
+
+        .navbar-dark .navbar-nav .nav-link,
+        .navbar-dark .navbar-brand {
+            color: #fff !important;
+            /* 텍스트 색상은 흰색으로 유지 */
+        }
+
+        .navbar-dark .navbar-toggler {
+            color: #fff !important;
+            border-color: #6f42c1 !important;
+            /* 보라색 */
+        }
+
+        /* 탭 스타일 */
+        .nav-tabs {
+            margin-bottom: 20px;
+        }
+
+        .tab-content>.tab-pane {
+            display: none;
+        }
+
+        .tab-content>.active {
+            display: block;
+        }
+
+        /* 왼쪽 탭 스타일 */
+        .tab-left {
+            border-right: 1px solid #ddd;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .col-md-10 {
+            padding-left: 30px;
+        }
+
+        /* 모달 창 내용 가운데 정렬 */
+        .modal-body {
+            text-align: center;
+        }
+
+        .modal-body img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .price-percentage {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Wonka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="story.html">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chocolates.html">Chocolates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Delivery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chocolates Section-->
+     <br>
+    <br>
+    <br>
+    <section class="page-section" id="chocolates">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">구매하기</h2>
+                <h3 class="section-subheading text-muted">상상 그 이상의 초콜릿</h3>
+                <p>차원이 다른 세상을 맛보고 싶다면 고민은 시간문제!</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-2 tab-left">
+                    <ul class="nav nav-tabs flex-column" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#hoverchoc" role="tab">BEST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#big-night-out" role="tab">당일 제조</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#silver-lining" role="tab">특별 맞춤 제조</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#forty-second-sweet" role="tab">Oompa-Loompa Pick!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="hoverchoc" role="tabpanel">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalRegular">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/1.jpeg"
+                                            alt="HOVERCHOC" />
+                                    </a>
+                                    <h4 class="my-3">HOVERCHOC</h4>
+                                    <p class="text-muted"><span class="price-percentage">10%</span> $90.00</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalRegular2">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/4.jpeg"
+                                            alt="NEW CHOCOLATE" />
+                                    </a>
+                                    <h4 class="my-3">FOURTY SECOND SWEET</h4>
+                                    <p class="text-muted"><span class="price-percentage">10%</span> $95.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="big-night-out" role="tabpanel">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalDiamond">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/2.jpeg"
+                                            alt="BIG NIGHT OUT" />
+                                    </a>
+                                    <h4 class="my-3">BIG NIGHT OUT</h4>
+                                    <p class="text-muted"><span class="price-percentage">15%</span> $209.00</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalEmerald2">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/8.jpeg"
+                                            alt="Giraffe Milk Macaroon" />
+                                    </a>
+                                    <h4 class="my-3">Giraffe Milk Macaroon</h4>
+                                    <p class="text-muted"><span class="price-percentage">20%</span> $179.00</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="tab-pane" id="big-night-out" role="tabpanel">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalDiamond">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/2.jpeg"
+                                            alt="BIG NIGHT OUT" />
+                                    </a>
+                                    <h4 class="my-3">BIG NIGHT OUT</h4>
+                                    <p class="text-muted"><span class="price-percentage">15%</span> $209.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="silver-lining" role="tabpanel">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalEmerald">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/3.jpeg"
+                                            alt="SILVER LINING" />
+                                    </a>
+                                    <h4 class="my-3">SILVER LINING</h4>
+                                    <p class="text-muted"><span class="price-percentage">15%</span> $120.00</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalEmerald2">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/6.jpeg"
+                                            alt="ACACIA MINT" />
+                                    </a>
+                                    <h4 class="my-3">ACACIA MINT</h4>
+                                    <p class="text-muted"><span class="price-percentage">15%</span> $125.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="forty-second-sweet" role="tabpanel">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalFortySecondSweet">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/4.jpeg"
+                                            alt="FORTY SECOND SWEET" />
+                                    </a>
+                                    <h4 class="my-3">FORTY SECOND SWEET</h4>
+                                    <p class="text-muted"><span class="price-percentage">10%</span> $95.00</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalHairRepairEclair">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/5.jpeg"
+                                            alt="HAIR REPAIR ECLAIR" />
+                                    </a>
+                                    <h4 class="my-3">HAIR REPAIR ECLAIR</h4>
+                                    <p class="text-muted"><span class="price-percentage">20%</span> $150.00</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalAcaciaMint">
+                                        <img class="img-fluid rounded-circle" src="assets/img/chocolates/6.jpeg"
+                                            alt="ACACIA MINT" />
+                                    </a>
+                                    <h4 class="my-3">ACACIA MINT</h4>
+                                    <p class="text-muted"><span class="price-percentage">15%</span> $125.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Regular -->
+    <div class="modal fade" id="modalRegular" tabindex="-1" aria-labelledby="modalRegularLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRegularLabel">HOVERCHOC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/1.jpeg" alt="HOVERCHOC" />
+                    <p class="text-muted mt-3">초코렛에 새로운 혁명을 가져올 Hoverchoc! 이 초콜릿은 부드러운 밀크 초콜릿과 크리스피한 견과류의 조화로, 먹는 순간 공중에 떠있는 듯한 기분을 선사합니다. 
+                        한 번 맛보면 잊을 수 없는 특별한 경험을 만나보세요.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">10%</span> $90.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegular2" tabindex="-1" aria-labelledby="modalRegular2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRegular2Label">FOURTY SECOND SWEET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/4.jpeg" alt="FOURTY SECOND SWEET" />
+                    <p class="text-muted mt-3">단 42초 만에 행복해지는 마법, Forty Second Sweet 초콜릿! 진한 카라멜과 바삭한 프레첼이 어우러져 달콤하고 짭조름한 맛을 선사합니다. 빠르게 녹아내리는 카라멜과 프레첼의 식감이 일품인 이 초콜릿은 매 순간을 특별하게 만들어 줍니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">10%</span> $95.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Diamond -->
+    <div class="modal fade" id="modalDiamond" tabindex="-1" aria-labelledby="modalDiamondLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDiamondLabel">BIG NIGHT OUT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/2.jpeg" alt="BIG NIGHT OUT" />
+                    <p class="text-muted mt-3">대담한 밤을 위한 Big Night Out 초콜릿! 다크 초콜릿과 체리 리큐르의 만남으로, 입안 가득 깊은 풍미와 풍부한 향이 퍼집니다. 특별한 날, 특별한 사람과 함께 즐기기에 완벽한 초콜릿입니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">15%</span> $209.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDiamond" tabindex="-1" aria-labelledby="modalDiamondLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDiamondLabel">Giraffe Milk Macaroon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/8.jpeg" alt="Giraffe Milk Macaroon" />
+                    <p class="text-muted mt-3">대담한 밤을 위한 Big Night Out 초콜릿! 다크 초콜릿과 체리 리큐르의 만남으로, 입안 가득 깊은 풍미와 풍부한 향이 퍼집니다. 특별한 날, 특별한 사람과 함께 즐기기에 완벽한 초콜릿입니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">15%</span> $179.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Emerald -->
+    <div class="modal fade" id="modalEmerald" tabindex="-1" aria-labelledby="modalEmeraldLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEmeraldLabel">SILVER LINING</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/3.jpeg" alt="SILVER LINING" />
+                    <p class="text-muted mt-3">고급스러운 맛의 결정체, Silver Lining 초콜릿. 벨기에산 화이트 초콜릿과 프랑스산 라즈베리의 조합으로 만들어진 이 초콜릿은, 상큼한 과일 맛과 달콤한 초콜릿의 완벽한 조화를 자랑합니다. 한 입 베어 물면 기분 좋은 여운이 남습니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">15%</span> $120.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEmerald2" tabindex="-1" aria-labelledby="modalEmerald2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEmerald2Label">Giraffe Milk Macaroon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/8.jpeg" alt="Giraffe Milk Macaroon" />
+                    <p class="text-muted mt-3">희귀한 기린 우유로 만들어진 이 독특한 초콜릿 간식은 섬세한 마카롱 쉘과 어우러져 풍부한 맛과 가벼운 바삭함이 조화를 이루는 특별한 간식을 제공합니다. 한 입마다 모험을 즐기고 싶은 분들에게 완벽한 선택일거에요</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">15%</span> $179.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Special -->
+    <div class="modal fade" id="modalFortySecondSweet" tabindex="-1" aria-labelledby="modalFortySecondSweetLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFortySecondSweetLabel">FORTY SECOND SWEET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/4.jpeg" alt="FORTY SECOND SWEET" />
+                    <p class="text-muted mt-3">단 42초 만에 행복해지는 마법, Forty Second Sweet 초콜릿! 진한 카라멜과 바삭한 프레첼이 어우러져 달콤하고 짭조름한 맛을 선사합니다. 빠르게 녹아내리는 카라멜과 프레첼의 식감이 일품인 이 초콜릿은 매 순간을 특별하게 만들어 줍니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">20%</span> $150.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHairRepairEclair" tabindex="-1" aria-labelledby="modalHairRepairEclairLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHairRepairEclairLabel">HAIR REPAIR ECLAIR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/5.jpeg" alt="HAIR REPAIR ECLAIR" />
+                    <p class="text-muted mt-3">건강한 아름다움을 위한 Hair Repair Eclair 초콜릿. 고급 밀크 초콜릿과 헤이즐넛 크림의 완벽한 조화로, 맛 뿐만 아니라 머릿결까지 생각한 특별한 초콜릿입니다. 헤이즐넛의 고소한 맛과 초콜릿의 부드러움이 어우러져 입안 가득 풍미가 퍼집니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">20%</span> $150.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAcaciaMint" tabindex="-1" aria-labelledby="modalAcaciaMintLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAcaciaMintLabel">ACACIA MINT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded-circle" src="assets/img/chocolates/6.jpeg" alt="ACACIA MINT" />
+                    <p class="text-muted mt-3">신선한 민트와 아카시아 꿀의 조합, Acacia Mint 초콜릿! 다크 초콜릿과 민트의 상쾌함이 절묘하게 어우러져 입안을 깨끗하고 신선하게 만들어 줍니다. 꿀의 자연스러운 단맛이 더해져 완벽한 밸런스를 자랑합니다.</p>
+                    <p class="text-muted mt-3">가격: <span class="price-percentage">15%</span> $125.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; OompaLoompa 2023</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">YOO JIHO</a>
+                    <a class="link-dark text-decoration-none" href="#!">Team OompaLoompa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
